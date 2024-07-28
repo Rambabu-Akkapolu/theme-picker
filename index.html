@@ -1,0 +1,32 @@
+<!DOCTYPE html5>
+<html lang="en">
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Theme Picker</title>
+<head>
+   <style>
+      body {
+         color: white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap:10px
+      }
+      h2{
+        margin: 0;
+        padding:0;
+      }
+   </style>
+</head>
+<body>
+   <h2>Theme Picker</h2>
+   <input id = "color" type = "color" value = "fff">
+   <script>
+      setInterval(() => {
+         let color = document.getElementById('color');
+         let colorValue = color.value;
+         document.body.style.backgroundColor = colorValue;
+      }, 100);
+   </script>
+</body>
+</html>
